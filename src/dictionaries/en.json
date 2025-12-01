@@ -1,0 +1,13 @@
+{
+  "HomePage": {
+    "title": "Hemaks Corporate Solutions",
+    "description": "High quality under-counter and industrial solutions.",
+    "button": "View Products"
+  },
+  "Navigation": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact"
+  }
+}

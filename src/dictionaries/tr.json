@@ -1,0 +1,13 @@
+{
+  "HomePage": {
+    "title": "Hemaks Kurumsal Çözümler",
+    "description": "Yüksek kaliteli tezgah altı ve endüstriyel çözümler.",
+    "button": "Ürünleri İncele"
+  },
+  "Navigation": {
+    "home": "Anasayfa",
+    "products": "Ürünler",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  }
+}

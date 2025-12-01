@@ -1,0 +1,13 @@
+{
+  "HomePage": {
+    "title": "Soluciones Corporativas Hemaks",
+    "description": "Soluciones industriales y bajo mostrador de alta calidad.",
+    "button": "Ver Productos"
+  },
+  "Navigation": {
+    "home": "Inicio",
+    "products": "Productos",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  }
+}

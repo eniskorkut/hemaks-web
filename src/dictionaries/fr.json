@@ -1,0 +1,13 @@
+{
+  "HomePage": {
+    "title": "Solutions d'Entreprise Hemaks",
+    "description": "Solutions industrielles et sous-comptoir de haute qualité.",
+    "button": "Voir les Produits"
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "products": "Produits",
+    "about": "À Propos",
+    "contact": "Contact"
+  }
+}
