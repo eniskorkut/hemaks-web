@@ -9,5 +9,29 @@
     "products": "Productos",
     "about": "Nosotros",
     "contact": "Contacto"
+  },
+  "Hero": {
+    "slides": [
+      {
+        "title": "Soluciones Modernas de Cocina",
+        "description": "Diseños innovadores que maximizan el uso en espacios reducidos.",
+        "button": "Ver Productos"
+      },
+      {
+        "title": "Refrigeración Industrial",
+        "description": "Sistemas de refrigeración de alto rendimiento y duraderos para su negocio.",
+        "button": "Información Detallada"
+      }
+    ]
+  },
+  "Categories": {
+    "kitchen": "Grupo de Cocina",
+    "wardrobe": "Grupo de Armarios",
+    "bathroom": "Grupo de Baño"
+  },
+  "Footer": {
+    "rights": "Todos los derechos reservados.",
+    "description": "Hemaks, su socio confiable en sistemas de cocina y refrigeración industrial.",
+    "getDirections": "Cómo llegar"
   }
 }

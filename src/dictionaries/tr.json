@@ -9,5 +9,29 @@
     "products": "Ürünler",
     "about": "Hakkımızda",
     "contact": "İletişim"
+  },
+  "Hero": {
+    "slides": [
+      {
+        "title": "Modern Mutfak Çözümleri",
+        "description": "Dar alanlarda maksimum kullanım sağlayan yenilikçi tasarımlar.",
+        "button": "Ürünleri İncele"
+      },
+      {
+        "title": "Endüstriyel Soğutma",
+        "description": "İşletmeniz için yüksek performanslı ve dayanıklı soğutma sistemleri.",
+        "button": "Detaylı Bilgi"
+      }
+    ]
+  },
+  "Categories": {
+    "kitchen": "Mutfak Grubu",
+    "wardrobe": "Gardırop Grubu",
+    "bathroom": "Banyo Grubu"
+  },
+  "Footer": {
+    "rights": "Tüm hakları saklıdır.",
+    "description": "Hemaks, endüstriyel mutfak ve soğutma sistemlerinde güvenilir çözüm ortağınız.",
+    "getDirections": "Yol Tarifi Al"
   }
 }

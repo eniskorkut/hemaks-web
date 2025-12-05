@@ -1,1 +1,17 @@
 @import "tailwindcss";
+/* ... var olan kodların en altına ekle ... */
+
+@keyframes logoEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* 20px yukarıdan başla */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Yerine otur */
+  }
+}
+
+.animate-logo {
+  animation: logoEntrance 0.8s ease-out forwards; /* 0.8 saniyede gerçekleşsin */
+}

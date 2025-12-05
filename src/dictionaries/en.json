@@ -9,5 +9,29 @@
     "products": "Products",
     "about": "About Us",
     "contact": "Contact"
+  },
+  "Hero": {
+    "slides": [
+      {
+        "title": "Modern Kitchen Solutions",
+        "description": "Innovative designs providing maximum usage in narrow spaces.",
+        "button": "View Products"
+      },
+      {
+        "title": "Industrial Cooling",
+        "description": "High performance and durable cooling systems for your business.",
+        "button": "Detailed Info"
+      }
+    ]
+  },
+  "Categories": {
+    "kitchen": "Kitchen Group",
+    "wardrobe": "Wardrobe Group",
+    "bathroom": "Bathroom Group"
+  },
+  "Footer": {
+    "rights": "All rights reserved.",
+    "description": "Hemaks, your reliable solution partner in industrial kitchen and cooling systems.",
+    "getDirections": "Get Directions"
   }
 }

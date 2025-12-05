@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
 
-// Kendi bileşenlerimizi ekliyoruz
+// Bileşenleri import ediyoruz
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer"; // <-- Footer'ı çağırdık
 import { getDictionary, Locale } from "@/lib/dictionary";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,29 +14,28 @@ export const metadata: Metadata = {
   description: "Hemaks Web Sitesi Yenileme Projesi",
 };
 
-// Layout da params alır ve Next 15'te bu Promise'dir.
 type Props = {
   children: React.ReactNode;
   params: Promise<{ lang: Locale }>;
 };
 
 export default async function RootLayout({ children, params }: Props) {
-  // 1. Dili öğren
   const { lang } = await params;
-
-  // 2. Sözlüğü getir (Sunucu tarafında çalışır, çok hızlıdır)
   const dict = await getDictionary(lang);
 
   return (
     <html lang={lang}>
-      <body className={inter.className}>
-        {/* Navbar'ı en tepeye koyduk ve sözlüğü ona verdik */}
+      <body className={inter.className + " flex flex-col min-h-screen"}>
+        {/* Navbar en tepede */}
         <Navbar lang={lang} dict={dict} />
         
-        {/* Sayfaların içeriği buraya gelecek */}
-        <main className="min-h-screen">
-          {children}
+        {/* İçerik (page.tsx) ortada ve büyüyebilir (flex-grow) */}
+        <main className="flex-grow">
+           {children}
         </main>
+
+        {/* Footer en altta */}
+        <Footer lang={lang} dict={dict} />
         
       </body>
     </html>

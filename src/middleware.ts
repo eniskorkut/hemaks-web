@@ -18,28 +18,26 @@ function getLocale(request: NextRequest): string {
 }
 
 export function middleware(request: NextRequest) {
+  // Kullanıcının girmek istediği adresi al (örn: /hakkimizda)
   const { pathname } = request.nextUrl;
 
-  // 1. URL zaten dilli ise karışma
+  // 3. Eğer URL zaten desteklediğimiz bir dille başlıyorsa (örn: /tr/...) işlem yapma, devam et.
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
   if (pathnameHasLocale) return;
 
-  // 2. Dil eksikse bul
+  // 4. Dil eksikse, uygun dili bul ve yönlendir
   const locale = getLocale(request);
-  request.nextUrl.pathname = `/${locale}${pathname}`;
-
-  // 3. AKILLI YÖNLENDİRME (Burayı değiştiriyoruz)
-  // process.env.NODE_ENV bize 'development' veya 'production' değerini verir.
-  const isProduction = process.env.NODE_ENV === 'production';
   
-  // Canlıdaysak 308 (Permanent), Geliştirme ise 307 (Temporary)
-  const statusCode = isProduction ? 308 : 307;
-
-  return NextResponse.redirect(request.nextUrl, statusCode);
+  // URL'i güncelle: http://localhost:3000/hakkimizda -> http://localhost:3000/tr/hakkimizda
+  request.nextUrl.pathname = `/${locale}${pathname}`;
+  
+  // Kullanıcıyı yeni adrese yönlendir (307 Temporary Redirect yerine 308 Permanent Redirect SEO için daha iyidir ama şimdilik redirect kullanıyoruz)
+  return NextResponse.redirect(request.nextUrl);
 }
+
 // 5. Middleware'in hangi yollarda çalışacağını belirt (Matcher)
 export const config = {
   matcher: [
