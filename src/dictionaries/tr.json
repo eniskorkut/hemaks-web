@@ -33,5 +33,27 @@
     "rights": "Tüm hakları saklıdır.",
     "description": "Hemaks, endüstriyel mutfak ve soğutma sistemlerinde güvenilir çözüm ortağınız.",
     "getDirections": "Yol Tarifi Al"
+  },
+  "ProductDetail": {
+    "category": "Kategori",
+    "description": "Ürün Açıklaması",
+    "back": "Ürünlere Dön",
+    "features": "Özellikler",
+    "contactBtn": "WhatsApp ile Bilgi Al"
+  },
+  "AboutPage": {
+    "heroTitle": "Hakkımızda",
+    "heroDesc": "Yenilikçi tasarımlar ve kaliteli üretim anlayışıyla mutfaklarınıza değer katıyoruz.",
+    "storyTitle": "Hikayemiz",
+    "storyText": "Hemaks, endüstriyel mutfak ve mobilya aksesuarları sektöründe öncü bir marka olma vizyonuyla yola çıkmıştır. Kurulduğumuz günden bu yana, kaliteyi estetikle buluşturarak kullanıcılarımızın hayatını kolaylaştıran çözümler üretiyoruz. Kayseri OSB'deki modern tesislerimizde, uzman kadromuz ve ileri teknoloji makine parkurumuzla üretim yapmaktayız.",
+    "visionTitle": "Vizyonumuz",
+    "visionText": "Sektörde global bir marka haline gelerek, yenilikçi ürünlerimizle dünya mutfaklarında standartları belirleyen öncü firma olmak.",
+    "missionTitle": "Misyonumuz",
+    "missionText": "Müşteri memnuniyetini en üst düzeyde tutarak, çevreye duyarlı, sürdürülebilir ve ergonomik yaşam alanları yaratan ürünler geliştirmek.",
+    "valuesTitle": "Değerlerimiz",
+    "value1": "Kalite",
+    "value2": "Güven",
+    "value3": "İnovasyon",
+    "value4": "Müşteri Odaklılık"
   }
 }

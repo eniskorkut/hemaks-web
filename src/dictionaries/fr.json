@@ -33,5 +33,27 @@
     "rights": "Tous droits réservés.",
     "description": "Hemaks, votre partenaire fiable dans les systèmes de cuisine industrielle et de refroidissement.",
     "getDirections": "Obtenir un Itinéraire"
+  },
+  "ProductDetail": {
+    "category": "Category",
+    "description": "Description",
+    "back": "Back to Products",
+    "features": "Features",
+    "contactBtn": "Get Info via WhatsApp"
+  },
+  "AboutPage": {
+    "heroTitle": "About Us",
+    "heroDesc": "Adding value to your kitchens with innovative designs and quality production approach.",
+    "storyTitle": "Our Story",
+    "storyText": "Hemaks set out with the vision of becoming a leading brand in the industrial kitchen and furniture accessories sector. Since the day we were founded, we have been producing solutions that make our users' lives easier by combining quality with aesthetics. We produce in our modern facilities in Kayseri OIZ with our expert staff and advanced technology machinery.",
+    "visionTitle": "Our Vision",
+    "visionText": "To become a pioneering company that sets standards in world kitchens with our innovative products by becoming a global brand in the sector.",
+    "missionTitle": "Our Mission",
+    "missionText": "To develop products that create environmentally friendly, sustainable and ergonomic living spaces by keeping customer satisfaction at the highest level.",
+    "valuesTitle": "Our Values",
+    "value1": "Quality",
+    "value2": "Trust",
+    "value3": "Innovation",
+    "value4": "Customer Focus"
   }
 }
