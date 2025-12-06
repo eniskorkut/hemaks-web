@@ -41,11 +41,6 @@ export function middleware(request: NextRequest) {
 // 5. Middleware'in hangi yollarda çalışacağını belirt (Matcher)
 export const config = {
   matcher: [
-    // Şu dosyalar hariç her şeyde çalışsın:
-    // - _next/static (resimler, css vb.)
-    // - _next/image (optimize edilmiş resimler)
-    // - favicon.ico (tarayıcı ikonu)
-    // - images (public klasöründeki resimler)
-    '/((?!_next/static|_next/image|favicon.ico|images).*)',
+    '/((?!_next/static|_next/image|favicon.ico|images|sitemap.xml|robots.txt).*)',
   ],
 };
