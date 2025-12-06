@@ -1,17 +1,28 @@
 @import "tailwindcss";
-/* ... var olan kodların en altına ekle ... */
 
-@keyframes logoEntrance {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px); /* 20px yukarıdan başla */
+/* ⚠️ İŞTE ÇÖZÜM BU SATIRDA: */
+/* Tailwind v4'e "dark:" özelliğinin .dark sınıfına bağlı olduğunu öğretiyoruz */
+@variant dark (&:where(.dark, .dark *));
+/* Temel Renk Ayarları */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0); /* Yerine otur */
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
   }
 }
 
-.animate-logo {
-  animation: logoEntrance 0.8s ease-out forwards; /* 0.8 saniyede gerçekleşsin */
+/* Senin Özel Animasyonun */
+@layer utilities {
+  @keyframes logoEntrance {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .animate-logo {
+    animation: logoEntrance 0.8s ease-out forwards;
+  }
 }

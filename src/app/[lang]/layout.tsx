@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
-
-// Bileşenleri import ediyoruz
+import ThemeProvider from "@/providers/ThemeProvider";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer"; // <-- Footer'ı çağırdık
+import Footer from "@/components/Footer"; 
 import { getDictionary, Locale } from "@/lib/dictionary";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,18 +23,24 @@ export default async function RootLayout({ children, params }: Props) {
   const dict = await getDictionary(lang);
 
   return (
-    <html lang={lang}>
-      <body className={inter.className + " flex flex-col min-h-screen"}>
-        {/* Navbar en tepede */}
-        <Navbar lang={lang} dict={dict} />
+    <html lang={lang} suppressHydrationWarning> 
+      {/* AÇIK MOD: bg-gray-50 (Hafif gri)
+          KOYU MOD: dark:bg-zinc-900 (Antrasit) ve dark:text-white (Beyaz Yazı)
+      */}
+      <body className={inter.className + " flex flex-col min-h-screen transition-colors duration-300 bg-gray-50 dark:bg-zinc-900 dark:text-white"}>
         
-        {/* İçerik (page.tsx) ortada ve büyüyebilir (flex-grow) */}
-        <main className="flex-grow">
-           {children}
-        </main>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          
+          <Navbar lang={lang} dict={dict} />
+          
+          {/* Main kısmı da şeffaf veya aynı renk olsun */}
+          <main className="flex-grow">
+             {children}
+          </main>
 
-        {/* Footer en altta */}
-        <Footer lang={lang} dict={dict} />
+          <Footer lang={lang} dict={dict} />
+          
+        </ThemeProvider>
         
       </body>
     </html>

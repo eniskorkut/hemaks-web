@@ -4,22 +4,23 @@ type FooterProps = {
   lang: string;
   dict: any;
 };
-// Footer bileşeni
+
 export default function Footer({ lang, dict }: FooterProps) {
-  // Güncel yıl
   const year = new Date().getFullYear();
 
-  // Harita koordinatları
+  // ✅ KESİN VE DOĞRU KONUM (Kayseri OSB - Hemaks)
+  // Koordinatlar: 38.7175131, 35.3394885
   const mapCoords = "38.7175131,35.3394885";
   
   // Embed Linki (API Key istemez)
   const mapEmbedUrl = `https://maps.google.com/maps?q=${mapCoords}&t=&z=17&ie=UTF8&iwloc=&output=embed`;
   
-  // Tıklama Linki (Büyük harita)
+  // Tıklama Linki
   const mapDirectLink = `https://www.google.com/maps/search/?api=1&query=${mapCoords}`;
-  // Footer JSX
+
   return (
-    <footer className="bg-gray-900 text-gray-300 mt-auto">
+    // ✅ dark:bg-black (Tam Siyah) eklendi
+    <footer className="bg-gray-900 dark:bg-black text-gray-300 mt-auto border-t border-transparent dark:border-white/10 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           
@@ -42,7 +43,6 @@ export default function Footer({ lang, dict }: FooterProps) {
           {/* 3. İletişim */}
           <div className="col-span-1">
             <h3 className="text-white font-semibold mb-4 uppercase text-sm">İletişim</h3>
-            {/* Adres yazısını da senin verdiğin doğru bilgiye göre sabitledik */}
             <p className="text-sm mb-1 font-semibold text-gray-400">KORPA İMALAT PAZARLAMA</p>
             <p className="text-sm mb-1">OSB 32. Cad. No:2/B</p>
             <p className="text-sm mb-4">Melikgazi / KAYSERİ</p>
@@ -81,7 +81,7 @@ export default function Footer({ lang, dict }: FooterProps) {
           </div>
 
         </div>
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        <div className="border-t border-gray-800 dark:border-white/10 mt-8 pt-8 text-center text-sm transition-colors duration-300">
           <p>© {year} Hemaks. {dict.Footer.rights}</p>
         </div>
       </div>
