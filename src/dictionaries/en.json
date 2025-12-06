@@ -55,5 +55,19 @@
     "value2": "Trust",
     "value3": "Innovation",
     "value4": "Customer Focus"
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "subtitle": "Do not hesitate to contact us for your questions, projects or collaborations.",
+    "infoTitle": "Contact Information",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "formTitle": "Contact Form",
+    "name": "Full Name",
+    "formEmail": "Your Email Address",
+    "subject": "Subject",
+    "message": "Your Message",
+    "sendBtn": "Send Message"
   }
 }

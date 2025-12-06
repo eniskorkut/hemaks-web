@@ -55,5 +55,19 @@
     "value2": "Trust",
     "value3": "Innovation",
     "value4": "Customer Focus"
+  },
+  "ContactPage": {
+    "title": "Bize Ulaşın",
+    "subtitle": "Sorularınız, projeleriniz veya iş birlikleri için bizimle iletişime geçmekten çekinmeyin.",
+    "infoTitle": "İletişim Bilgileri",
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "formTitle": "İletişim Formu",
+    "name": "Adınız Soyadınız",
+    "formEmail": "E-posta Adresiniz",
+    "subject": "Konu",
+    "message": "Mesajınız",
+    "sendBtn": "Mesajı Gönder"
   }
 }
