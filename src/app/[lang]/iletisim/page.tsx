@@ -12,6 +12,8 @@ export default async function ContactPage({ params }: Props) {
   const addressQuery = "KORPA+IMALAT+PAZARLAMA+TICARET+OSB+32.CAD+NO:2/B+MELIKGAZI+KAYSERI";
   const mapEmbedUrl = `https://maps.google.com/maps?q=${addressQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
+await new Promise((resolve) => setTimeout(resolve, 1000));
+
   return (
     <div className="bg-gray-50 min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

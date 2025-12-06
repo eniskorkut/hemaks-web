@@ -12,6 +12,7 @@ export default async function KitchenPage({ params }: Props) {
 
   // Sadece MUTFAK ürünlerini filtrele
 const wardrobeProducts = products.filter((p) => p.category === "wardrobe");
+await new Promise((resolve) => setTimeout(resolve, 1000));
   return (
     <div className="py-16 bg-gray-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -9,6 +9,8 @@ export default async function AboutPage({ params }: Props) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
 
+await new Promise((resolve) => setTimeout(resolve, 1000));
+
   return (
     <div className="bg-white min-h-screen">
       

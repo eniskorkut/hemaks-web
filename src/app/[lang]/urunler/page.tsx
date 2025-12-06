@@ -11,7 +11,7 @@ export default async function AllProductsPage({ params }: Props) {
   const dict = await getDictionary(lang);
 
   // Filtreleme YOK. Tüm ürünleri (products) direkt kullanıyoruz.
-
+await new Promise((resolve) => setTimeout(resolve, 1000));
   return (
     <div className="py-16 bg-gray-50 min-h-screen">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">

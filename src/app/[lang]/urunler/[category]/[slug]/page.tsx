@@ -28,7 +28,7 @@ export default async function ProductDetailPage({ params }: Props) {
   const relatedProducts = products
     .filter((p) => p.category === category && p.id !== slug)
     .slice(0, 4); // En fazla 4 tane göster
-
+await new Promise((resolve) => setTimeout(resolve, 1000));
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

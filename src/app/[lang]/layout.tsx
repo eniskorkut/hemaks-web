@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 import { getDictionary, Locale } from "@/lib/dictionary";
 
 const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: "Hemaks - Kurumsal",
   description: "Hemaks Web Sitesi Yenileme Projesi",
@@ -21,7 +20,7 @@ type Props = {
 export default async function RootLayout({ children, params }: Props) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
-
+await new Promise((resolve) => setTimeout(resolve, 1000));
   return (
     <html lang={lang} suppressHydrationWarning> 
       {/* AÇIK MOD: bg-gray-50 (Hafif gri)
