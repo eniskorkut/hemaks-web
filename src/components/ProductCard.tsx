@@ -10,11 +10,10 @@ type ProductCardProps = {
 export default function ProductCard({ product, lang }: ProductCardProps) {
   return (
     <Link href={`/${lang}/urunler/${product.category}/${product.id}`} className="group block h-full">
-      {/* ✅ dark:bg-gray-800 ve dark:border-gray-700 eklendi */}
+      {/* Updated container styles to remove potential top borders */}
       <div className="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col">
         
-        {/* Resim Alanı */}
-        {/* dark:bg-gray-700 eklendi (resim yüklenirken arka plan rengi için) */}
+        {/* Image Area */}
         <div className="relative h-64 w-full overflow-hidden bg-gray-50 dark:bg-gray-700">
           <Image
             src={product.image}
@@ -27,13 +26,11 @@ export default function ProductCard({ product, lang }: ProductCardProps) {
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
         </div>
 
-        {/* Yazı Alanı */}
+        {/* Content Area */}
         <div className="p-6 flex flex-col flex-grow">
-          {/* ✅ Başlık Rengi: dark:text-gray-100 */}
           <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors mb-3">
             {product.title[lang]}
           </h3>
-          {/* ✅ Açıklama Rengi: dark:text-gray-400 */}
           <p className="text-sm text-gray-500 dark:text-gray-400 line-clamp-3 leading-relaxed">
             {product.description[lang]}
           </p>

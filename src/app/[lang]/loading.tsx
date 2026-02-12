@@ -8,7 +8,7 @@ export default function Loading() {
       <div className="relative flex flex-col items-center">
         
         {/* LOGO: Nefes Alma (Pulse) Animasyonu */}
-        <div className="relative w-48 h-16 animate-pulse">
+        <div className="relative w-70 h-25 animate-pulse">
           <Image
             src="/images/hemaks-logo.png"
             alt="Yükleniyor..."

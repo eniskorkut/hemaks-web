@@ -20,7 +20,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
           
           <div className="flex-shrink-0 flex items-center">
             <Link href={`/${lang}`} className="flex items-center">
-              <div className="relative h-16 w-52 animate-logo"> 
+              <div className="relative h-20 w-62 animate-logo"> 
                 {/* Logo dark mode'da kaybolmasın diye arka plan eklemedik, PNG şeffaf olmalı */}
                 <Image 
                   src="/images/hemaks-logo.png"
