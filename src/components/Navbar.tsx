@@ -6,9 +6,23 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import NavMenu from "./NavMenu";
 import ThemeToggle from "./ThemeToggle";
 
+type NavbarDict = {
+  Navigation: {
+    home: string;
+    products: string;
+    about: string;
+    contact: string;
+  };
+  Categories: {
+    kitchen: string;
+    wardrobe: string;
+    bathroom: string;
+  };
+};
+
 type NavbarProps = {
   lang: string;
-  dict: any;
+  dict: NavbarDict;
 };
 
 export default function Navbar({ lang, dict }: NavbarProps) {

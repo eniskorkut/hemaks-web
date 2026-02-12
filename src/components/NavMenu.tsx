@@ -4,9 +4,23 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
+type NavMenuDict = {
+  Navigation: {
+    home: string;
+    products: string;
+    about: string;
+    contact: string;
+  };
+  Categories: {
+    kitchen: string;
+    wardrobe: string;
+    bathroom: string;
+  };
+};
+
 type NavMenuProps = {
   lang: string;
-  dict: any;
+  dict: NavMenuDict;
 };
 
 export default function NavMenu({ lang, dict }: NavMenuProps) {

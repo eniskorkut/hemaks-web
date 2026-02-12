@@ -1,8 +1,21 @@
 import Link from "next/link";
 
+type FooterDict = {
+  Footer: {
+    description: string;
+    getDirections: string;
+    rights: string;
+  };
+  Navigation: {
+    home: string;
+    products: string;
+    about: string;
+  };
+};
+
 type FooterProps = {
   lang: string;
-  dict: any;
+  dict: FooterDict;
 };
 
 export default function Footer({ lang, dict }: FooterProps) {
