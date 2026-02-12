@@ -3,8 +3,9 @@ import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import ThemeProvider from "@/providers/ThemeProvider";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer"; 
+import Footer from "@/components/Footer";
 import { getDictionary, Locale } from "@/lib/dictionary";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -20,27 +21,27 @@ type Props = {
 export default async function RootLayout({ children, params }: Props) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
-await new Promise((resolve) => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   return (
-    <html lang={lang} suppressHydrationWarning> 
+    <html lang={lang} suppressHydrationWarning>
       {/* AÇIK MOD: bg-gray-50 (Hafif gri)
           KOYU MOD: dark:bg-zinc-900 (Antrasit) ve dark:text-white (Beyaz Yazı)
       */}
       <body className={inter.className + " flex flex-col min-h-screen transition-colors duration-300 bg-gray-50 dark:bg-zinc-900 dark:text-white"}>
-        
+
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          
+
           <Navbar lang={lang} dict={dict} />
-          
+
           {/* Main kısmı da şeffaf veya aynı renk olsun */}
           <main className="flex-grow">
-             {children}
+            {children}
           </main>
 
           <Footer lang={lang} dict={dict} />
-          
+
         </ThemeProvider>
-        
+        <SpeedInsights />
       </body>
     </html>
   );
