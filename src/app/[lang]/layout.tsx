@@ -6,11 +6,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { getDictionary, Locale } from "@/lib/dictionary";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Hemaks - Kurumsal",
   description: "Hemaks Web Sitesi Yenileme Projesi",
+  icons: {
+    icon: "/images/favicon.jpg",
+  },
 };
 
 type Props = {
@@ -42,6 +46,7 @@ export default async function RootLayout({ children, params }: Props) {
 
         </ThemeProvider>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

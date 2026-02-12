@@ -25,9 +25,12 @@
     ]
   },
   "Categories": {
-    "kitchen": "Groupe Cuisine",
-    "wardrobe": "Groupe Garde-robe",
-    "bathroom": "Groupe Salle de Bain"
+    "kiler": "Groupe Garde-manger",
+    "dolap-ici": "Groupe Intérieur d'Armoire",
+    "tezgah-alti": "Groupe Sous-comptoir",
+    "gardirop": "Groupe Garde-robe",
+    "banyo": "Groupe Salle de Bain",
+    "set-arasi": "Groupe Crédence"
   },
   "Footer": {
     "rights": "Tous droits réservés.",

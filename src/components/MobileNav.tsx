@@ -12,9 +12,12 @@ type MobileNavDict = {
         contact: string;
     };
     Categories: {
-        kitchen: string;
-        wardrobe: string;
-        bathroom: string;
+        kiler: string;
+        "dolap-ici": string;
+        "tezgah-alti": string;
+        gardirop: string;
+        banyo: string;
+        "set-arasi": string;
     };
 };
 
@@ -139,25 +142,46 @@ export default function MobileNav({ lang, dict }: MobileNavProps) {
                                 </Link>
                                 <div className="ml-4 mt-1 space-y-1 border-l-2 border-gray-100 dark:border-gray-800 pl-4">
                                     <Link
-                                        href={`/${lang}/urunler/mutfak`}
+                                        href={`/${lang}/urunler/kiler`}
                                         onClick={closeMenu}
                                         className="block py-2 text-base text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-500 transition-colors"
                                     >
-                                        {dict.Categories.kitchen}
+                                        {dict.Categories.kiler}
+                                    </Link>
+                                    <Link
+                                        href={`/${lang}/urunler/dolap-ici`}
+                                        onClick={closeMenu}
+                                        className="block py-2 text-base text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-500 transition-colors"
+                                    >
+                                        {dict.Categories["dolap-ici"]}
+                                    </Link>
+                                    <Link
+                                        href={`/${lang}/urunler/tezgah-alti`}
+                                        onClick={closeMenu}
+                                        className="block py-2 text-base text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-500 transition-colors"
+                                    >
+                                        {dict.Categories["tezgah-alti"]}
                                     </Link>
                                     <Link
                                         href={`/${lang}/urunler/gardirop`}
                                         onClick={closeMenu}
                                         className="block py-2 text-base text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-500 transition-colors"
                                     >
-                                        {dict.Categories.wardrobe}
+                                        {dict.Categories.gardirop}
                                     </Link>
                                     <Link
                                         href={`/${lang}/urunler/banyo`}
                                         onClick={closeMenu}
                                         className="block py-2 text-base text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-500 transition-colors"
                                     >
-                                        {dict.Categories.bathroom}
+                                        {dict.Categories.banyo}
+                                    </Link>
+                                    <Link
+                                        href={`/${lang}/urunler/set-arasi`}
+                                        onClick={closeMenu}
+                                        className="block py-2 text-base text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-500 transition-colors"
+                                    >
+                                        {dict.Categories["set-arasi"]}
                                     </Link>
                                 </div>
                             </div>

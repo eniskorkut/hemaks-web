@@ -25,9 +25,12 @@
     ]
   },
   "Categories": {
-    "kitchen": "Kitchen Group",
-    "wardrobe": "Wardrobe Group",
-    "bathroom": "Bathroom Group"
+    "kiler": "Pantry Group",
+    "dolap-ici": "In-Cabinet Group",
+    "tezgah-alti": "Under-Counter Group",
+    "gardirop": "Wardrobe Group",
+    "banyo": "Bathroom Group",
+    "set-arasi": "Backsplash Group"
   },
   "Footer": {
     "rights": "All rights reserved.",

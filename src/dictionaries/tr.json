@@ -25,9 +25,12 @@
     ]
   },
   "Categories": {
-    "kitchen": "Mutfak Grubu",
-    "wardrobe": "Gardırop Grubu",
-    "bathroom": "Banyo Grubu"
+    "kiler": "Kiler Grubu",
+    "dolap-ici": "Dolap İçi Grubu",
+    "tezgah-alti": "Tezgah Altı Grubu",
+    "gardirop": "Gardırop Grubu",
+    "banyo": "Banyo Grubu",
+    "set-arasi": "Set Arası Grubu"
   },
   "Footer": {
     "rights": "Tüm hakları saklıdır.",

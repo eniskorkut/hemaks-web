@@ -25,9 +25,12 @@
     ]
   },
   "Categories": {
-    "kitchen": "Grupo de Cocina",
-    "wardrobe": "Grupo de Armarios",
-    "bathroom": "Grupo de Baño"
+    "kiler": "Grupo Despensa",
+    "dolap-ici": "Grupo Interior de Armario",
+    "tezgah-alti": "Grupo Bajo Mostrador",
+    "gardirop": "Grupo Guardarropa",
+    "banyo": "Grupo Baño",
+    "set-arasi": "Grupo Salpicadero"
   },
   "Footer": {
     "rights": "Todos los derechos reservados.",

@@ -15,9 +15,12 @@ type NavbarDict = {
     contact: string;
   };
   Categories: {
-    kitchen: string;
-    wardrobe: string;
-    bathroom: string;
+    kiler: string;
+    "dolap-ici": string;
+    "tezgah-alti": string;
+    gardirop: string;
+    banyo: string;
+    "set-arasi": string;
   };
 };
 
