@@ -398,12 +398,12 @@ Sessiz ve yavaş kapanma (Soft-Close) özelliği ile konforlu bir kullanım suna
       es: "Maximice la organización en los cajones de su cocina con la bandeja de cubiertos de plástico HEMAKS.",
       ar: "قم بزيادة التنظيم في أدراج مطبخك مع منظم أدوات المائدة البلاستيكي من هيماكس."
     },
-    image: "/images/kaşıklık-1.jpg",
+    image: "/images/kasiklik-1.jpg",
     images: [
-      "/images/kaşıklık-1.jpg",
-      "/images/kaşıklık-2.jpg",
-      "/images/kaşıklık-3.jpg",
-      "/images/kaşıklık-4.jpg"
+      "/images/kasiklik-1.jpg",
+      "/images/kasiklik-2.jpg",
+      "/images/kasiklik-3.jpg",
+      "/images/kasiklik-4.jpg"
     ],
     table: `<div class="overflow-x-auto">
   <table class="w-full text-sm text-left border border-gray-200">
