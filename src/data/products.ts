@@ -404,7 +404,123 @@ Sessiz ve yavaş kapanma (Soft-Close) özelliği ile konforlu bir kullanım suna
       "/images/kaşıklık-2.jpg",
       "/images/kaşıklık-3.jpg",
       "/images/kaşıklık-4.jpg"
-    ]
+    ],
+    table: `<div class="overflow-x-auto">
+  <table class="w-full text-sm text-left border border-gray-200">
+    <thead class="bg-gray-100 text-gray-700 font-bold uppercase">
+      <tr>
+        <th class="border p-3 text-center">Ebat (GxDxY)</th>
+        <th class="border p-3 text-center">Renk</th>
+        <th class="border p-3 text-center">Ürün Kodu</th>
+        <th class="border p-3 text-center">Net Kesim (GxDxY)</th>
+        <th class="border p-3 text-center">Koli İçi</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      
+      <!-- 300mm -->
+      <tr>
+        <td rowspan="2" class="border p-3 font-bold bg-gray-50 align-middle text-center">300x490x50</td>
+        <td class="border p-3 text-center">PARLAK GRİ</td>
+        <td class="border p-3 text-center font-mono">HM-3430</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">240x400x50</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">15 ADET</td>
+      </tr>
+      <tr><td class="border p-3 text-center">PARLAK BEYAZ</td><td class="border p-3 text-center font-mono">HM-3530</td></tr>
+
+      <!-- 370mm -->
+      <tr>
+        <td rowspan="2" class="border p-3 font-bold bg-gray-50 align-middle text-center">370x490x50</td>
+        <td class="border p-3 text-center">PARLAK GRİ</td>
+        <td class="border p-3 text-center font-mono">HM-3437</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">310x400x50</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">15 ADET</td>
+      </tr>
+      <tr><td class="border p-3 text-center">PARLAK BEYAZ</td><td class="border p-3 text-center font-mono">HM-3537</td></tr>
+
+      <!-- 420mm -->
+      <tr>
+        <td rowspan="2" class="border p-3 font-bold bg-gray-50 align-middle text-center">420x490x50</td>
+        <td class="border p-3 text-center">PARLAK GRİ</td>
+        <td class="border p-3 text-center font-mono">HM-3442</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">360x400x50</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">15 ADET</td>
+      </tr>
+      <tr><td class="border p-3 text-center">PARLAK BEYAZ</td><td class="border p-3 text-center font-mono">HM-3542</td></tr>
+
+      <!-- 470mm -->
+      <tr>
+        <td rowspan="2" class="border p-3 font-bold bg-gray-50 align-middle text-center">470x490x50</td>
+        <td class="border p-3 text-center">PARLAK GRİ</td>
+        <td class="border p-3 text-center font-mono">HM-3447</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">420x400x50</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">15 ADET</td>
+      </tr>
+      <tr><td class="border p-3 text-center">PARLAK BEYAZ</td><td class="border p-3 text-center font-mono">HM-3547</td></tr>
+
+      <!-- 550mm -->
+      <tr>
+        <td rowspan="2" class="border p-3 font-bold bg-gray-50 align-middle text-center">550x490x50</td>
+        <td class="border p-3 text-center">PARLAK GRİ</td>
+        <td class="border p-3 text-center font-mono">HM-3455</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">480x400x50</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">15 ADET</td>
+      </tr>
+      <tr><td class="border p-3 text-center">PARLAK BEYAZ</td><td class="border p-3 text-center font-mono">HM-3555</td></tr>
+
+      <!-- 620mm -->
+      <tr>
+        <td rowspan="2" class="border p-3 font-bold bg-gray-50 align-middle text-center">620x490x50</td>
+        <td class="border p-3 text-center">PARLAK GRİ</td>
+        <td class="border p-3 text-center font-mono">HM-3462</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">560x400x50</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">15 ADET</td>
+      </tr>
+      <tr><td class="border p-3 text-center">PARLAK BEYAZ</td><td class="border p-3 text-center font-mono">HM-3562</td></tr>
+
+      <!-- 670mm -->
+      <tr>
+        <td rowspan="2" class="border p-3 font-bold bg-gray-50 align-middle text-center">670x490x50</td>
+        <td class="border p-3 text-center">PARLAK GRİ</td>
+        <td class="border p-3 text-center font-mono">HM-3467</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">635x400x50</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">15 ADET</td>
+      </tr>
+      <tr><td class="border p-3 text-center">PARLAK BEYAZ</td><td class="border p-3 text-center font-mono">HM-3567</td></tr>
+
+      <!-- 750mm -->
+      <tr>
+        <td rowspan="2" class="border p-3 font-bold bg-gray-50 align-middle text-center">750x490x50</td>
+        <td class="border p-3 text-center">PARLAK GRİ</td>
+        <td class="border p-3 text-center font-mono">HM-3475</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">690x400x50</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">15 ADET</td>
+      </tr>
+      <tr><td class="border p-3 text-center">PARLAK BEYAZ</td><td class="border p-3 text-center font-mono">HM-3575</td></tr>
+
+      <!-- 850mm -->
+      <tr>
+        <td rowspan="2" class="border p-3 font-bold bg-gray-50 align-middle text-center">850x490x50</td>
+        <td class="border p-3 text-center">PARLAK GRİ</td>
+        <td class="border p-3 text-center font-mono">HM-3485</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">780x400x50</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">15 ADET</td>
+      </tr>
+      <tr><td class="border p-3 text-center">PARLAK BEYAZ</td><td class="border p-3 text-center font-mono">HM-3585</td></tr>
+
+      <!-- 970mm -->
+      <tr>
+        <td rowspan="2" class="border p-3 font-bold bg-gray-50 align-middle text-center">970x490x50</td>
+        <td class="border p-3 text-center">PARLAK GRİ</td>
+        <td class="border p-3 text-center font-mono">HM-3497</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">900x400x50</td>
+        <td rowspan="2" class="border p-3 align-middle text-center">15 ADET</td>
+      </tr>
+      <tr><td class="border p-3 text-center">PARLAK BEYAZ</td><td class="border p-3 text-center font-mono">HM-3597</td></tr>
+
+    </tbody>
+  </table>
+</div>`
   },
   {
     id: "dolap içi-ayarli-tabaklik",
