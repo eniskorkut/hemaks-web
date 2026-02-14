@@ -33,6 +33,7 @@ export type Product = {
   };
   table?: string; // HTML Tablo içeriği
   image: string;
+  images?: string[];
 };
 
 export const products: Product[] = [
@@ -197,7 +198,8 @@ Hemaks Teleskopik Raylı Kiler Sistemleri sessizce açılıp kapanabilen ve kola
     </tbody>
   </table>
 </div>`,
-    image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=600"
+    image: "/images/kiler.jpg",
+    images: ["/images/kiler.jpg", "/images/kiler-2.jpg"]
   },
   {
     id: "kapaga-bagli-ikiz-kiler",
@@ -359,7 +361,8 @@ Sessiz ve yavaş kapanma (Soft-Close) özelliği ile konforlu bir kullanım suna
     </tbody>
   </table>
 </div>`,
-    image: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?q=80&w=600"
+    image: "/images/ikiz-kiler.jpg",
+    images: ["/images/ikiz-kiler.jpg", "/images/ikiz-kiler-2.jpg"]
   },
 
   // --- DOLAP İÇİ GRUBU ---
