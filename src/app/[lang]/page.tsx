@@ -8,22 +8,21 @@ type Props = {
 export default async function Home({ params }: Props) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
-await new Promise((resolve) => setTimeout(resolve, 1000));
   return (
     <main className="bg-white dark:bg-black transition-colors duration-300">
-      
+
       {/* 1. MANŞET ALANI (Hero Slider) */}
       <HeroSlider lang={lang} dict={dict} />
 
       {/* 2. NEDEN HEMAKS? BÖLÜMÜ */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        
+
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white transition-colors">
           Neden Hemaks?
         </h2>
-        
+
         <div className="grid md:grid-cols-3 gap-8 text-center">
-          
+
           {/* Kart 1: Kalite */}
           <div className="p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-300 group">
             <div className="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">

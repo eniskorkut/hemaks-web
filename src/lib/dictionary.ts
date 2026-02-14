@@ -7,6 +7,7 @@ const dictionaries = {
   en: () => import('@/dictionaries/en.json').then((module) => module.default),
   fr: () => import('@/dictionaries/fr.json').then((module) => module.default),
   es: () => import('@/dictionaries/es.json').then((module) => module.default),
+  ar: () => import('@/dictionaries/ar.json').then((module) => module.default),
 };
 
 // Hangi dillerin geçerli olduğunu bir tiple belirtelim
@@ -19,6 +20,6 @@ export const getDictionary = async (locale: Locale) => {
   if (!dictionaries[locale]) {
     return dictionaries['tr']();
   }
-  
+
   return dictionaries[locale]();
 };

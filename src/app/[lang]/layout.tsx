@@ -25,13 +25,51 @@ type Props = {
 export default async function RootLayout({ children, params }: Props) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+
+  // Arapça için RTL (Sağdan Sola) desteği
+  const dir = lang === "ar" ? "rtl" : "ltr";
+
   return (
-    <html lang={lang} suppressHydrationWarning>
+    <html lang={lang} dir={dir} suppressHydrationWarning>
       {/* AÇIK MOD: bg-gray-50 (Hafif gri)
           KOYU MOD: dark:bg-zinc-900 (Antrasit) ve dark:text-white (Beyaz Yazı)
       */}
       <body className={inter.className + " flex flex-col min-h-screen transition-colors duration-300 bg-gray-50 dark:bg-zinc-900 dark:text-white"}>
+
+        {/* JSON-LD Organization Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Hemaks",
+              "legalName": "KORPA İMALAT PAZARLAMA",
+              "url": "https://hemaks.com",
+              "logo": "https://hemaks.com/images/hemaks-logo.png",
+              "description": "Endüstriyel mutfak ve raylı kiler sistemleri üreticisi.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "OSB 32. Cad. No:2/B",
+                "addressLocality": "Melikgazi",
+                "addressRegion": "Kayseri",
+                "postalCode": "38070",
+                "addressCountry": "TR"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+90-352-311-52-52",
+                "contactType": "customer service",
+                "email": "korpa@hemaks.com",
+                "availableLanguage": ["Turkish", "English", "French", "Spanish"]
+              },
+              "sameAs": [
+                "https://www.instagram.com/hemaks",
+                "https://www.facebook.com/hemaks"
+              ]
+            })
+          }}
+        />
 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 

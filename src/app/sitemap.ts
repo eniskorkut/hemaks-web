@@ -25,8 +25,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Her ürün için ve her dil için link oluştur
   products.forEach((product) => {
     languages.forEach((lang) => {
+      // Kategori ismindeki boşlukları tire ile değiştir (SEO dostu URL)
+      // Örn: "dolap içi" -> "dolap-ici"
+      const categorySlug = product.category.replace(/\s+/g, '-').replace(/ç/g, 'c').replace(/ı/g, 'i');
+
       sitemapEntries.push({
-        url: `${baseUrl}/${lang}/urunler/${product.category}/${product.id}`,
+        url: `${baseUrl}/${lang}/urunler/${categorySlug}/${product.id}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.9, // Ürün sayfaları çok önemli

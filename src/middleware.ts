@@ -4,7 +4,7 @@ import { match } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
 
 // 1. Desteklediğimiz dilleri tanımlayalım
-const locales = ["tr", "en", "fr", "es"];
+const locales = ["tr", "en", "fr", "es", "ar"];
 const defaultLocale = "tr"; // Varsayılan dilimiz
 
 // 2. Kullanıcının tarayıcı diline göre en uygun dili seçen fonksiyon
@@ -30,10 +30,10 @@ export function middleware(request: NextRequest) {
 
   // 4. Dil eksikse, uygun dili bul ve yönlendir
   const locale = getLocale(request);
-  
+
   // URL'i güncelle: http://localhost:3000/hakkimizda -> http://localhost:3000/tr/hakkimizda
   request.nextUrl.pathname = `/${locale}${pathname}`;
-  
+
   // Kullanıcıyı yeni adrese yönlendir (307 Temporary Redirect yerine 308 Permanent Redirect SEO için daha iyidir ama şimdilik redirect kullanıyoruz)
   return NextResponse.redirect(request.nextUrl);
 }

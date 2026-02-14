@@ -4,7 +4,7 @@ import { Product } from "@/data/products";
 
 type ProductCardProps = {
   product: Product;
-  lang: "tr" | "en" | "fr" | "es";
+  lang: "tr" | "en" | "fr" | "es" | "ar";
 };
 
 export default function ProductCard({ product, lang }: ProductCardProps) {
@@ -12,7 +12,7 @@ export default function ProductCard({ product, lang }: ProductCardProps) {
     <Link href={`/${lang}/urunler/${product.category}/${product.id}`} className="group block h-full">
       {/* Updated container styles to remove potential top borders */}
       <div className="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-        
+
         {/* Image Area */}
         <div className="relative h-64 w-full overflow-hidden bg-gray-50 dark:bg-gray-700">
           <Image

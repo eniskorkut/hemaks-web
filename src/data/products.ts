@@ -1,35 +1,40 @@
 export type Product = {
   id: string;
-  category: "kiler" | "dolap-ici" | "tezgah-alti" | "gardirop" | "banyo" | "set-arasi";
+  category: "kiler" | "dolap içi" | "tezgah-alti" | "gardirop" | "banyo" | "set-arasi";
   title: {
     tr: string;
     en: string;
     fr: string;
     es: string;
+    ar: string;
   };
   description: {
     tr: string;
     en: string;
     fr: string;
     es: string;
+    ar: string;
   };
   longDescription?: {
     tr: string;
     en: string;
     fr: string;
     es: string;
+    ar: string;
   };
   features?: {
     tr: string[];
     en: string[];
     fr: string[];
     es: string[];
+    ar: string[];
   };
   specifications?: {
     tr: { label: string; value: string }[];
     en: { label: string; value: string }[];
     fr: { label: string; value: string }[];
     es: { label: string; value: string }[];
+    ar: { label: string; value: string }[];
   };
   table?: string; // HTML Tablo içeriği
   image: string;
@@ -41,8 +46,8 @@ export const products: Product[] = [
   {
     id: "teleskopik-rayli-kiler",
     category: "kiler",
-    title: { tr: "Teleskopik Raylı Kiler Sistemi", en: "Telescopic Rail Pantry System", fr: "Système de Garde-manger à Rails Télescopiques", es: "Sistema de Despensa con Rieles Telescópicos" },
-    description: { tr: "Erzaklarınızı daha düzenli saklayabilirsiniz.", en: "Organize your groceries better.", fr: "Organisez mieux vos courses.", es: "Organiza mejor tus compras." },
+    title: { tr: "Teleskopik Raylı Kiler Sistemi", en: "Telescopic Rail Pantry System", fr: "Système de Garde-manger à Rails Télescopiques", es: "Sistema de Despensa con Rieles Telescópicos", ar: "نظام مخزن المطبخ ذو القضبان التلسكوبية" },
+    description: { tr: "Erzaklarınızı daha düzenli saklayabilirsiniz.", en: "Organize your groceries better.", fr: "Organisez mieux vos courses.", es: "Organiza mejor tus compras.", ar: "قم بتنظيم مشترياتك بشكل أفضل." },
     longDescription: {
       tr: `HEMAKS'ın akıllı depolama çözümleri olarak sunduğu Teleskopik Raylı Kiler Sistemleri ile erzaklarınızı daha düzenli saklayabilirsiniz.
 
@@ -55,7 +60,8 @@ HEMAKS Teleskopik Raylı Kiler Sistemleri, Dolabınızın en verimli şekilde ku
 Hemaks Teleskopik Raylı Kiler Sistemleri sessizce açılıp kapanabilen ve kolayca temizlenebilen kiler sistemleri konforuyla, özellikle aile ve dostların daha sık ağırlandığı mutfaklarda yemek yapmayı daha keyifli hale getirir.`,
       en: "With Hemaks Telescopic Rail Pantry Systems, you can store your provisions more organized. It provides easy access to all dry foods and offers rational solutions with adjustable height.",
       fr: "Avec les systèmes de garde-manger à rails télescopiques Hemaks, vous pouvez ranger vos provisions de manière plus organisée. Il offre un accès facile à tous les aliments secs et des solutions rationnelles avec une hauteur réglable.",
-      es: "Con los sistemas de despensa de rieles telescópicos Hemaks, puede almacenar sus provisiones de manera más organizada. Proporciona un fácil acceso a todos los alimentos secos y ofrece soluciones racionales con altura ajustable."
+      es: "Con los sistemas de despensa de rieles telescópicos Hemaks, puede almacenar sus provisiones de manera más organizada. Proporciona un fácil acceso a todos los alimentos secos y ofrece soluciones racionales con altura ajustable.",
+      ar: "مع أنظمة مخزن المطبخ ذو القضبان التلسكوبية من هيماكس، يمكنك تخزين مؤنك بشكل أكثر تنظيماً. توفر سهولة الوصول إلى جميع الأطعمة الجافة وتقدم حلولاً منطقية مع ارتفاع قابل للتعديل."
     },
     features: {
       tr: [
@@ -81,6 +87,12 @@ Hemaks Teleskopik Raylı Kiler Sistemleri sessizce açılıp kapanabilen ve kola
         "Mecanismo Soft-Close",
         "Cestas fáciles de limpiar",
         "Rieles telescópicos de extensión completa"
+      ],
+      ar: [
+        "جسم قابل لتعديل الارتفاع",
+        "آلية إغلاق ناعم",
+        "سلال سهلة التنظيف",
+        "قضبان تلسكوبية بتمديد كامل"
       ]
     },
     table: `<div class="overflow-x-auto">
@@ -204,8 +216,8 @@ Hemaks Teleskopik Raylı Kiler Sistemleri sessizce açılıp kapanabilen ve kola
   {
     id: "kapaga-bagli-ikiz-kiler",
     category: "kiler",
-    title: { tr: "Kapağa Bağlı İkiz Kiler Sistemi", en: "Door Mounted Twin Pantry System", fr: "Système de Garde-manger Jumelé Monté sur Porte", es: "Sistema de Despensa Doble Montado en Puerta" },
-    description: { tr: "Kapakla birlikte hareket eden entegre çözüm.", en: "Integrated solution moving with the door.", fr: "Solution intégrée se déplaçant avec la porte.", es: "Solución integrada que se mueve con la puerta." },
+    title: { tr: "Kapağa Bağlı İkiz Kiler Sistemi", en: "Door Mounted Twin Pantry System", fr: "Système de Garde-manger Jumelé Monté sur Porte", es: "Sistema de Despensa Doble Montado en Puerta", ar: "نظام مخزن المطبخ المزدوج المثبت على الباب" },
+    description: { tr: "Kapakla birlikte hareket eden entegre çözüm.", en: "Integrated solution moving with the door.", fr: "Solution intégrée se déplaçant avec la porte.", es: "Solución integrada que se mueve con la puerta.", ar: "حل متكامل يتحرك مع الباب." },
     longDescription: {
       tr: `HEMAKS Kapağa Bağlı İkiz Kiler Sistemleri ile mutfak dolaplarınızda maksimum depolama alanı yaratın.
       
@@ -216,7 +228,8 @@ Her iki taraftaki (kapak ve gövde) sepetlerin yüksekliği ayarlanabilir, böyl
 Sessiz ve yavaş kapanma (Soft-Close) özelliği ile konforlu bir kullanım sunar.`,
       en: "Create maximum storage space in your kitchen cabinets with HEMAKS Door Mounted Twin Pantry Systems. Thanks to its special mechanism, when you open the cabinet door, the rear baskets move forward while the door baskets open completely out. Adjustable basket heights allow easy organization.",
       fr: "Créez un espace de stockage maximal dans vos armoires de cuisine avec les systèmes de garde-manger jumelés montés sur porte HEMAKS. Grâce à son mécanisme spécial, lorsque vous ouvrez la porte de l'armoire, les paniers arrière avancent tandis que les paniers de porte s'ouvrent complètement.",
-      es: "Cree el máximo espacio de almacenamiento en los gabinetes de su cocina con los sistemas de despensa doble montados en la puerta de HEMAKS. Gracias a su mecanismo especial, cuando abre la puerta del gabinete, las cestas traseras se mueven hacia adelante mientras que las cestas de la puerta se abren completamente."
+      es: "Cree el máximo espacio de almacenamiento en los gabinetes de su cocina con los sistemas de despensa doble montados en la puerta de HEMAKS. Gracias a su mecanismo especial, cuando abre la puerta del gabinete, las cestas traseras se mueven hacia adelante mientras que las cestas de la puerta se abren completamente.",
+      ar: "اخلق مساحة تخزين قصوى في خزائن مطبخك مع أنظمة مخزن المطبخ المزدوج المثبت على الباب من هيماكس. بفضل آليته الخاصة، عندما تفتح باب الخزانة، تتحرك السلال الخلفية للأمام بينما تفتح سلال الباب بالكامل."
     },
     features: {
       tr: [
@@ -246,6 +259,13 @@ Sessiz ve yavaş kapanma (Soft-Close) özelliği ile konforlu bir kullanım suna
         "Mecanismo Soft-Close",
         "Cestas de cromo inoxidable",
         "Fácil montaje y limpieza"
+      ],
+      ar: [
+        "تخزين ثنائي الاتجاه (باب + جسم)",
+        "ارتفاعات سلة قابلة للتعديل",
+        "آلية إغلاق ناعم",
+        "سلال كروم مقاومة للصدأ",
+        "سهولة التجميع والتنظيف"
       ]
     },
     table: `<div class="overflow-x-auto">
@@ -367,19 +387,60 @@ Sessiz ve yavaş kapanma (Soft-Close) özelliği ile konforlu bir kullanım suna
 
   // --- DOLAP İÇİ GRUBU ---
   {
-    id: "kasiklik",
-    category: "dolap-ici",
-    title: { tr: "Ahşap Kaşıklık", en: "Wooden Cutlery Tray", fr: "Range-couverts en bois", es: "Bandeja de cubiertos de madera" },
-    description: { tr: "Çekmecelerinizde doğal düzen.", en: "Natural organization in drawers.", fr: "Organisation naturelle.", es: "Organización natural." },
-    image: "https://images.unsplash.com/photo-1584622050111-993a426fbf0a?q=80&w=600"
+    id: "plastik-kasiklik-duzenleyici",
+    category: "dolap içi",
+    title: { tr: "Çekmece İçi Plastik Kaşıklık ve Düzenleyici", en: "Plastic Cutlery Tray & Organizer", fr: "Range-couverts en plastique", es: "Bandeja de cubiertos de plástico", ar: "منظم أدوات المائدة البلاستيكي للأدراج" },
+    description: { tr: "Çekmecelerinizde modern ve pratik düzen.", en: "Modern and practical organization in drawers.", fr: "Organisation moderne.", es: "Organización moderna.", ar: "تنظيم عصري وعملي في الأدراج." },
+    longDescription: {
+      tr: "HEMAKS Çekmece İçi Plastik Kaşıklık ve Düzenleyici ile mutfak çekmecelerinizde maksimum düzen sağlayın. Dayanıklı plastik malzemesi ve modüler yapısı sayesinde her boyutta çekmeceye uyum sağlar. Çatal, kaşık, bıçak ve diğer mutfak gereçlerinizi kategorize ederek kolay erişim imkanı sunar.",
+      en: "Maximize organization in your kitchen drawers with HEMAKS Plastic Cutlery Tray & Organizer. Durable material and modular structure adapt to any drawer size.",
+      fr: "Maximisez l'organisation dans vos tiroirs de cuisine avec le range-couverts en plastique HEMAKS.",
+      es: "Maximice la organización en los cajones de su cocina con la bandeja de cubiertos de plástico HEMAKS.",
+      ar: "قم بزيادة التنظيم في أدراج مطبخك مع منظم أدوات المائدة البلاستيكي من هيماكس."
+    },
+    image: "/images/kaşıklık-1.jpg",
+    images: [
+      "/images/kaşıklık-1.jpg",
+      "/images/kaşıklık-2.jpg",
+      "/images/kaşıklık-3.jpg",
+      "/images/kaşıklık-4.jpg"
+    ]
+  },
+  {
+    id: "dolap içi-ayarli-tabaklik",
+    category: "dolap içi",
+    title: { tr: "Dolap İçi Ayarlı Tabaklık", en: "Adjustable Plate Holder", fr: "Porte-assiettes réglable", es: "Soporte para platos ajustable", ar: "حامل أطباق قابل للتعديل داخل الخزانة" },
+    description: { tr: "Tabaklarınızı güvenle ve düzenle saklayın.", en: "Store your plates safely and neatly.", fr: "Rangez vos assiettes en toute sécurité.", es: "Guarde sus platos de forma segura.", ar: "احفظ أطباقك بأمان وترتيب." },
+    longDescription: {
+      tr: "HEMAKS Dolap İçi Ayarlı Tabaklık, tabaklarınızın dolap içinde kaymasını ve birbirine çarpmasını önler. Ayarlanabilir mekanizması sayesinde farklı boyuttaki tabaklarınıza tam uyum sağlar. Ergonomik tasarımı ile tabakları dolaptan alıp sofraya taşımayı kolaylaştırır.",
+      en: "HEMAKS Adjustable Plate Holder prevents plates from sliding and colliding. Its adjustable mechanism fits plates of different sizes perfectly.",
+      fr: "Le porte-assiettes réglable HEMAKS empêche les assiettes de glisser et de se heurter.",
+      es: "El soporte para platos ajustable HEMAKS evita que los platos se deslicen y choquen.",
+      ar: "يمنع حامل الأطباق القابل للتعديل من هيماكس الأطباق من الانزلاق والاصطدام."
+    },
+    image: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?q=80&w=600"
+  },
+  {
+    id: "dolap içi-ayarli-bardaklik",
+    category: "dolap içi",
+    title: { tr: "Dolap İçi Ayarlı Bardaklık", en: "Adjustable Cup Holder", fr: "Porte-tasses réglable", es: "Soporte para tazas ajustable", ar: "حامل أكواب قابل للتعديل داخل الخزانة" },
+    description: { tr: "Bardaklarınız için özel koruma ve düzen.", en: "Special protection and organization for your cups.", fr: "Protection spéciale pour vos tasses.", es: "Protección especial para sus tazas.", ar: "حماية خاصة وتنظيم لأكوابك." },
+    longDescription: {
+      tr: "HEMAKS Dolap İçi Ayarlı Bardaklık ile fincan ve bardaklarınızı düzenli bir şekilde depolayın. Kaydırmaz tabanı ve ayarlanabilir bölmeleri sayesinde bardaklarınızın devrilmesini önler ve dolap alanını verimli kullanmanızı sağlar.",
+      en: "Organize your cups and mugs with HEMAKS Adjustable Cup Holder. Non-slip base and adjustable compartments prevent tipping.",
+      fr: "Organisez vos tasses et mugs avec le porte-tasses réglable HEMAKS.",
+      es: "Organiza tus tazas y tazones con el soporte para tazas ajustable HEMAKS.",
+      ar: "نظم أكوابك وفناجينك مع حامل الأكواب القابل للتعديل من هيماكس."
+    },
+    image: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?q=80&w=600"
   },
 
   // --- TEZGAH ALTI GRUBU ---
   {
     id: "sise-tasiyici",
     category: "tezgah-alti",
-    title: { tr: "Şişe Taşıyıcı", en: "Bottle Carrier", fr: "Porte-bouteilles", es: "Portabotellas" },
-    description: { tr: "Tezgah altı düzenleyici sistem.", en: "Under-counter organizer system.", fr: "Système d'organisation.", es: "Sistema organizador." },
+    title: { tr: "Şişe Taşıyıcı", en: "Bottle Carrier", fr: "Porte-bouteilles", es: "Portabotellas", ar: "حامل زجاجات" },
+    description: { tr: "Tezgah altı düzenleyici sistem.", en: "Under-counter organizer system.", fr: "Système d'organisation.", es: "Sistema organizador.", ar: "نظام تنظيم تحت الطاولة." },
     image: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?q=80&w=600"
   },
 
@@ -387,8 +448,8 @@ Sessiz ve yavaş kapanma (Soft-Close) özelliği ile konforlu bir kullanım suna
   {
     id: "asansor-aski",
     category: "gardirop",
-    title: { tr: "Asansör Askı", en: "Lift Hanger", fr: "Penderie relevable", es: "Percha elevadora" },
-    description: { tr: "Yüksek dolaplara kolay erişim.", en: "Easy access to high cabinets.", fr: "Accès facile aux armoires hautes.", es: "Fácil acceso a armarios altos." },
+    title: { tr: "Asansör Askı", en: "Lift Hanger", fr: "Penderie relevable", es: "Percha elevadora", ar: "شماعة مصعد" },
+    description: { tr: "Yüksek dolaplara kolay erişim.", en: "Easy access to high cabinets.", fr: "Accès facile aux armoires hautes.", es: "Fácil acceso a armarios altos.", ar: "سهولة الوصول إلى الخزانات العالية." },
     image: "https://images.unsplash.com/photo-1558997519-83ea9252edf8?q=80&w=600"
   },
 
@@ -396,8 +457,8 @@ Sessiz ve yavaş kapanma (Soft-Close) özelliği ile konforlu bir kullanım suna
   {
     id: "kirli-sepeti",
     category: "banyo",
-    title: { tr: "Raylı Kirli Sepeti", en: "Rail Laundry Basket", fr: "Panier à linge", es: "Cesta de lavandería" },
-    description: { tr: "Dolap içi gizli çözüm.", en: "In-cabinet hidden solution.", fr: "Solution cachée dans l'armoire.", es: "Solución oculta en el gabinete." },
+    title: { tr: "Raylı Kirli Sepeti", en: "Rail Laundry Basket", fr: "Panier à linge", es: "Cesta de lavandería", ar: "سلة غسيل مع قضيب" },
+    description: { tr: "Dolap içi gizli çözüm.", en: "In-cabinet hidden solution.", fr: "Solution cachée dans l'armoire.", es: "Solución oculta en el gabinete.", ar: "حل مخفي داخل الخزانة." },
     image: "https://images.unsplash.com/photo-1552321901-700912415175?q=80&w=600"
   },
 
@@ -405,8 +466,8 @@ Sessiz ve yavaş kapanma (Soft-Close) özelliği ile konforlu bir kullanım suna
   {
     id: "baharatlik",
     category: "set-arasi",
-    title: { tr: "Set Arası Baharatlık", en: "Backsplash Spice Rack", fr: "Étagère à épices", es: "Estante de especias" },
-    description: { tr: "Elimizin altındaki lezzetler.", en: "Flavors at hand.", fr: "Saveurs à portée de main.", es: "Sabores a mano." },
+    title: { tr: "Set Arası Baharatlık", en: "Backsplash Spice Rack", fr: "Étagère à épices", es: "Estante de especias", ar: "رف توابل للمطبخ" },
+    description: { tr: "Elimizin altındaki lezzetler.", en: "Flavors at hand.", fr: "Saveurs à portée de main.", es: "Sabores a mano.", ar: "نكهات في متناول اليد." },
     image: "https://images.unsplash.com/photo-1532323544230-7191fd510c59?q=80&w=600"
   }
 ];

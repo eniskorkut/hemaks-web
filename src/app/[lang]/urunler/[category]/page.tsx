@@ -8,26 +8,35 @@ type Props = {
 };
 
 // Geçerli kategori listesi (products.ts ile uyumlu olmalı)
-const validCategories = ["kiler", "dolap-ici", "tezgah-alti", "gardirop", "banyo", "set-arasi"];
+const validCategories = ["kiler", "dolap-içi", "dolap-ici", "dolap içi", "tezgah-alti", "gardirop", "banyo", "set-arasi"];
 
 export default async function CategoryPage({ params }: Props) {
     const { lang, category } = await params;
     const dict = await getDictionary(lang);
 
     // 1. Kategori geçerliliğini kontrol et
-    if (!validCategories.includes(category)) {
+    // URL encoded gelebilir, decode edelim
+    const decodedCategory = decodeURIComponent(category);
+    if (!validCategories.includes(decodedCategory)) {
         return notFound();
     }
 
-    // 2. Kategoriye ait ürünleri filtrele
-    const categoryProducts = products.filter((p) => p.category === category);
+    // 2. Kategori eşleştirmesi (Slug -> Internal Key)
+    const categorySlugMap: Record<string, string> = {
+        "dolap-ici": "dolap içi",
+        "dolap-içi": "dolap içi",
+        "dolap içi": "dolap içi",
+    };
+    // Eşleşme yoksa kendisini kullan (diğer kategoriler için)
+    const internalCategoryKey = categorySlugMap[decodedCategory] || decodedCategory;
 
-    // 3. Kategori Başlığını Bul (Dict'ten)
-    // Dict yapısı: dict.Categories['kiler'] -> "Kiler Grubu" gibi
-    // Ancak `category` string, key olarak kullanılmalı.
-    // Dict tip tanımlaması `Record<string, string>` olmayabilir, bu yüzden `as any` veya güvenli erişim gerekebilir.
-    // Şimdilik `dict.Categories[category as keyof typeof dict.Categories]` deneyelim.
-    const categoryTitle = dict.Categories[category as keyof typeof dict.Categories] || category;
+    // 3. Kategoriye ait ürünleri filtrele
+    const categoryProducts = products.filter((p) => p.category === internalCategoryKey);
+
+    // 4. Kategori Başlığını Bul (Dict'ten)
+    // Dict yapısı: dict.Categories['kiler'] -> "Kiler Grubu"
+    // @ts-ignore
+    const categoryTitle = dict.Categories[internalCategoryKey] || internalCategoryKey;
 
     if (categoryProducts.length === 0) {
         return (

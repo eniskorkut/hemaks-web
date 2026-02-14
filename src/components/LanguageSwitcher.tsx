@@ -9,14 +9,14 @@ export default function LanguageSwitcher() {
 
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value;
-    
+
     // URL manipülasyonu: /tr/hakkimizda -> /en/hakkimizda
     // 1. URL'i parçalara ayır
     const pathSegments = pathname.split("/");
-    
+
     // 2. Dil kısmını (index 1) değiştir
     pathSegments[1] = newLocale;
-    
+
     // 3. Tekrar birleştir
     const newPath = pathSegments.join("/");
 
@@ -37,6 +37,7 @@ export default function LanguageSwitcher() {
       <option value="en">🇬🇧 EN</option>
       <option value="fr">🇫🇷 FR</option>
       <option value="es">🇪🇸 ES</option>
+      <option value="ar">🇸🇦 AR</option>
     </select>
   );
 }

@@ -13,7 +13,7 @@ type NavMenuDict = {
   };
   Categories: {
     kiler: string;
-    "dolap-ici": string;
+    "dolap içi": string;
     "tezgah-alti": string;
     gardirop: string;
     banyo: string;
@@ -81,7 +81,7 @@ export default function NavMenu({ lang, dict }: NavMenuProps) {
             </Link>
 
             {/* Kategori 2: Dolap İçi */}
-            <Link href={`/${lang}/urunler/dolap-ici`} className="group/item relative block h-24 rounded-lg overflow-hidden shadow-md">
+            <Link href={`/${lang}/urunler/dolap içi`} className="group/item relative block h-24 rounded-lg overflow-hidden shadow-md">
               <Image
                 src="https://images.unsplash.com/photo-1584622050111-993a426fbf0a?q=80&w=400"
                 alt="Dolap İçi"
@@ -91,7 +91,7 @@ export default function NavMenu({ lang, dict }: NavMenuProps) {
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/10 to-transparent group-hover/item:from-red-900/80 transition-colors duration-300 flex items-start p-3">
                 <span className="text-white font-bold text-xs uppercase tracking-wider drop-shadow-md">
-                  {dict.Categories["dolap-ici"]}
+                  {dict.Categories["dolap içi"]}
                 </span>
               </div>
             </Link>

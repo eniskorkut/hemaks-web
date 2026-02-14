@@ -26,7 +26,7 @@
   },
   "Categories": {
     "kiler": "Kiler Grubu",
-    "dolap-ici": "Dolap İçi Grubu",
+    "dolap içi": "Dolap İçi Grubu",
     "tezgah-alti": "Tezgah Altı Grubu",
     "gardirop": "Gardırop Grubu",
     "banyo": "Banyo Grubu",
@@ -35,7 +35,13 @@
   "Footer": {
     "rights": "Tüm hakları saklıdır.",
     "description": "Hemaks, endüstriyel mutfak ve soğutma sistemlerinde güvenilir çözüm ortağınız.",
-    "getDirections": "Yol Tarifi Al"
+    "getDirections": "Yol Tarifi Al",
+    "menu": "Menü",
+    "contact": "İletişim",
+    "location": "Konum",
+    "companyName": "KORPA İMALAT PAZARLAMA",
+    "addressLine1": "OSB 32. Cad. No:2/B",
+    "addressLine2": "Melikgazi / KAYSERİ"
   },
   "ProductDetail": {
     "category": "Kategori",

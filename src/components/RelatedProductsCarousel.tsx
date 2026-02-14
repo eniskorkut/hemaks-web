@@ -6,7 +6,7 @@ import { Product } from "@/data/products";
 
 type Props = {
     products: Product[];
-    lang: "tr" | "en" | "fr" | "es";
+    lang: "tr" | "en" | "fr" | "es" | "ar";
 };
 
 export default function RelatedProductsCarousel({ products, lang }: Props) {

@@ -26,7 +26,7 @@
   },
   "Categories": {
     "kiler": "Pantry Group",
-    "dolap-ici": "In-Cabinet Group",
+    "dolap içi": "In-Cabinet Group",
     "tezgah-alti": "Under-Counter Group",
     "gardirop": "Wardrobe Group",
     "banyo": "Bathroom Group",
@@ -35,7 +35,13 @@
   "Footer": {
     "rights": "All rights reserved.",
     "description": "Hemaks, your reliable solution partner in industrial kitchen and cooling systems.",
-    "getDirections": "Get Directions"
+    "getDirections": "Get Directions",
+    "menu": "Menu",
+    "contact": "Contact",
+    "location": "Location",
+    "companyName": "KORPA İMALAT PAZARLAMA",
+    "addressLine1": "OSB 32. Cad. No:2/B",
+    "addressLine2": "Melikgazi / KAYSERİ"
   },
   "ProductDetail": {
     "category": "Category",

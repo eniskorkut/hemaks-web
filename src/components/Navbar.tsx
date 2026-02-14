@@ -16,7 +16,7 @@ type NavbarDict = {
   };
   Categories: {
     kiler: string;
-    "dolap-ici": string;
+    "dolap içi": string;
     "tezgah-alti": string;
     gardirop: string;
     banyo: string;

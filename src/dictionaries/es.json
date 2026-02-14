@@ -26,7 +26,7 @@
   },
   "Categories": {
     "kiler": "Grupo Despensa",
-    "dolap-ici": "Grupo Interior de Armario",
+    "dolap içi": "Grupo Interior de Armario",
     "tezgah-alti": "Grupo Bajo Mostrador",
     "gardirop": "Grupo Guardarropa",
     "banyo": "Grupo Baño",
@@ -35,7 +35,13 @@
   "Footer": {
     "rights": "Todos los derechos reservados.",
     "description": "Hemaks, su socio confiable en sistemas de cocina y refrigeración industrial.",
-    "getDirections": "Cómo llegar"
+    "getDirections": "Cómo llegar",
+    "menu": "Menú",
+    "contact": "Contacto",
+    "location": "Ubicación",
+    "companyName": "KORPA İMALAT PAZARLAMA",
+    "addressLine1": "OSB 32. Cad. No:2/B",
+    "addressLine2": "Melikgazi / KAYSERİ"
   },
   "ProductDetail": {
     "category": "Category",
@@ -45,32 +51,32 @@
     "contactBtn": "Get Info via WhatsApp"
   },
   "AboutPage": {
-    "heroTitle": "About Us",
-    "heroDesc": "Adding value to your kitchens with innovative designs and quality production approach.",
-    "storyTitle": "Our Story",
-    "storyText": "Hemaks set out with the vision of becoming a leading brand in the industrial kitchen and furniture accessories sector. Since the day we were founded, we have been producing solutions that make our users' lives easier by combining quality with aesthetics. We produce in our modern facilities in Kayseri OIZ with our expert staff and advanced technology machinery.",
-    "visionTitle": "Our Vision",
-    "visionText": "To become a pioneering company that sets standards in world kitchens with our innovative products by becoming a global brand in the sector.",
-    "missionTitle": "Our Mission",
-    "missionText": "To develop products that create environmentally friendly, sustainable and ergonomic living spaces by keeping customer satisfaction at the highest level.",
-    "valuesTitle": "Our Values",
-    "value1": "Quality",
-    "value2": "Trust",
-    "value3": "Innovation",
-    "value4": "Customer Focus"
+    "heroTitle": "Sobre Nosotros",
+    "heroDesc": "Añadiendo valor a sus cocinas con diseños innovadores y un enfoque de producción de calidad.",
+    "storyTitle": "Nuestra Historia",
+    "storyText": "Hemaks nació con la visión de convertirse en una marca líder en el sector de cocinas industriales y accesorios para muebles. Desde el día de nuestra fundación, hemos estado produciendo soluciones que facilitan la vida de nuestros usuarios combinando calidad con estética. Producimos en nuestras modernas instalaciones en la zona industrial de Kayseri con nuestro personal experto y maquinaria de tecnología avanzada.",
+    "visionTitle": "Nuestra Visión",
+    "visionText": "Convertirnos en una empresa pionera que establece estándares en las cocinas del mundo con nuestros productos innovadores, convirtiéndonos en una marca global en el sector.",
+    "missionTitle": "Nuestra Misión",
+    "missionText": "Desarrollar productos que creen espacios de vida respetuosos con el medio ambiente, sostenibles y ergonómicos, manteniendo la satisfacción del cliente al más alto nivel.",
+    "valuesTitle": "Nuestros Valores",
+    "value1": "Calidad",
+    "value2": "Confianza",
+    "value3": "Innovación",
+    "value4": "Enfoque en el Cliente"
   },
   "ContactPage": {
-    "title": "Bize Ulaşın",
-    "subtitle": "Sorularınız, projeleriniz veya iş birlikleri için bizimle iletişime geçmekten çekinmeyin.",
-    "infoTitle": "İletişim Bilgileri",
-    "address": "Adres",
-    "phone": "Telefon",
-    "email": "E-posta",
-    "formTitle": "İletişim Formu",
-    "name": "Adınız Soyadınız",
-    "formEmail": "E-posta Adresiniz",
-    "subject": "Konu",
-    "message": "Mesajınız",
-    "sendBtn": "Mesajı Gönder"
+    "title": "Contáctenos",
+    "subtitle": "No dude en contactarnos para sus preguntas, proyectos o colaboraciones.",
+    "infoTitle": "Información de Contacto",
+    "address": "Dirección",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "formTitle": "Formulario de Contacto",
+    "name": "Nombre y Apellido",
+    "formEmail": "Su Correo Electrónico",
+    "subject": "Asunto",
+    "message": "Su Mensaje",
+    "sendBtn": "Enviar Mensaje"
   }
 }

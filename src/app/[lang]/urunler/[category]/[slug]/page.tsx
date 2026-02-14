@@ -41,8 +41,21 @@ export default async function ProductDetailPage({ params }: Props) {
             <li>/</li>
             <li><Link href={`/${lang}/urunler`} className="hover:text-red-600 transition">{dict.Navigation.products}</Link></li>
             <li>/</li>
-            {/* Kategori ismini büyük harf yapalım */}
-            <li><Link href={`/${lang}/urunler/${category}`} className="hover:text-red-600 transition capitalize">{category}</Link></li>
+            {/* Kategori ismini doğru gösterelim */}
+            <li>
+              <Link href={`/${lang}/urunler/${category}`} className="hover:text-red-600 transition">
+                {(() => {
+                  const decodedCategory = decodeURIComponent(category);
+                  const categorySlugMap: Record<string, string> = {
+                    "dolap-ici": "dolap içi",
+                    "dolap-içi": "dolap içi",
+                  };
+                  const categoryKey = categorySlugMap[decodedCategory] || decodedCategory;
+                  // @ts-ignore
+                  return dict.Categories[categoryKey] || categoryKey;
+                })()}
+              </Link>
+            </li>
             <li>/</li>
             <li className="text-gray-900 font-medium truncate" aria-current="page">{product.title[lang]}</li>
           </ol>

@@ -13,7 +13,7 @@ type MobileNavDict = {
     };
     Categories: {
         kiler: string;
-        "dolap-ici": string;
+        "dolap içi": string;
         "tezgah-alti": string;
         gardirop: string;
         banyo: string;
@@ -149,11 +149,11 @@ export default function MobileNav({ lang, dict }: MobileNavProps) {
                                         {dict.Categories.kiler}
                                     </Link>
                                     <Link
-                                        href={`/${lang}/urunler/dolap-ici`}
+                                        href={`/${lang}/urunler/dolap-içi`}
                                         onClick={closeMenu}
                                         className="block py-2 text-base text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-500 transition-colors"
                                     >
-                                        {dict.Categories["dolap-ici"]}
+                                        {dict.Categories["dolap içi"]}
                                     </Link>
                                     <Link
                                         href={`/${lang}/urunler/tezgah-alti`}
