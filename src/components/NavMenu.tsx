@@ -67,7 +67,7 @@ export default function NavMenu({ lang, dict }: NavMenuProps) {
             {/* Kategori 1: Kiler Grubu */}
             <Link href={`/${lang}/urunler/kiler`} className="group/item relative block h-24 rounded-lg overflow-hidden shadow-md">
               <Image
-                src="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=400"
+                src="/images/kiler.jpg"
                 alt="Kiler"
                 fill
                 sizes="200px"
@@ -83,7 +83,7 @@ export default function NavMenu({ lang, dict }: NavMenuProps) {
             {/* Kategori 2: Dolap İçi */}
             <Link href={`/${lang}/urunler/dolap içi`} className="group/item relative block h-24 rounded-lg overflow-hidden shadow-md">
               <Image
-                src="https://images.unsplash.com/photo-1584622050111-993a426fbf0a?q=80&w=400"
+                src="/images/dolap-ici-tabaklik.jpg"
                 alt="Dolap İçi"
                 fill
                 sizes="200px"
@@ -99,7 +99,7 @@ export default function NavMenu({ lang, dict }: NavMenuProps) {
             {/* Kategori 3: Tezgah Altı */}
             <Link href={`/${lang}/urunler/tezgah-alti`} className="group/item relative block h-24 rounded-lg overflow-hidden shadow-md">
               <Image
-                src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?q=80&w=400"
+                src="/images/tezgah-alti-şişelik.jpg"
                 alt="Tezgah Altı"
                 fill
                 sizes="200px"
@@ -115,7 +115,7 @@ export default function NavMenu({ lang, dict }: NavMenuProps) {
             {/* Kategori 4: Gardırop */}
             <Link href={`/${lang}/urunler/gardirop`} className="group/item relative block h-24 rounded-lg overflow-hidden shadow-md">
               <Image
-                src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?q=80&w=400"
+                src="/images/fasulye.jpg"
                 alt="Gardırop"
                 fill
                 sizes="200px"
@@ -131,7 +131,7 @@ export default function NavMenu({ lang, dict }: NavMenuProps) {
             {/* Kategori 5: Banyo */}
             <Link href={`/${lang}/urunler/banyo`} className="group/item relative block h-24 rounded-lg overflow-hidden shadow-md">
               <Image
-                src="https://images.unsplash.com/photo-1552321901-700912415175?q=80&w=400"
+                src="/images/ikiz-kiler.jpg"
                 alt="Banyo"
                 fill
                 sizes="200px"
@@ -147,7 +147,7 @@ export default function NavMenu({ lang, dict }: NavMenuProps) {
             {/* Kategori 6: Set Arası */}
             <Link href={`/${lang}/urunler/set-arasi`} className="group/item relative block h-24 rounded-lg overflow-hidden shadow-md">
               <Image
-                src="https://images.unsplash.com/photo-1532323544230-7191fd510c59?q=80&w=400"
+                src="/images/kasiklik-1.jpg"
                 alt="Set Arası"
                 fill
                 sizes="200px"

@@ -523,7 +523,7 @@ Sessiz ve yavaş kapanma (Soft-Close) özelliği ile konforlu bir kullanım suna
 </div>`
   },
   {
-    id: "dolap içi-ayarli-tabaklik",
+    id: "dolap-ici-ayarli-tabaklik",
     category: "dolap içi",
     title: { tr: "Dolap İçi Ayarlı Tabaklık", en: "Adjustable Plate Holder", fr: "Porte-assiettes réglable", es: "Soporte para platos ajustable", ar: "حامل أطباق قابل للتعديل داخل الخزانة" },
     description: { tr: "Tabaklarınızı güvenle ve düzenle saklayın.", en: "Store your plates safely and neatly.", fr: "Rangez vos assiettes en toute sécurité.", es: "Guarde sus platos de forma segura.", ar: "احفظ أطباقك بأمان وترتيب." },
@@ -534,10 +534,62 @@ Sessiz ve yavaş kapanma (Soft-Close) özelliği ile konforlu bir kullanım suna
       es: "El soporte para platos ajustable HEMAKS evita que los platos se deslicen y choquen.",
       ar: "يمنع حامل الأطباق القابل للتعديل من هيماكس الأطباق من الانزلاق والاصطدام."
     },
-    image: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?q=80&w=600"
+    features: {
+      tr: [
+        "Ayarlanabilir genişlik mekanizması",
+        "Kaydırmaz taban yapısı",
+        "Ergonomik taşıma kolları",
+        "Dayanıklı ve hijyenik malzeme"
+      ],
+      en: [
+        "Adjustable width mechanism",
+        "Non-slip base structure",
+        "Ergonomic carrying handles",
+        "Durable and hygienic material"
+      ],
+      fr: [
+        "Mécanisme de largeur réglable",
+        "Structure de base antidérapante",
+        "Poignées de transport ergonomiques",
+        "Matériau durable et hygiénique"
+      ],
+      es: [
+        "Mecanismo de ancho ajustable",
+        "Estructura de base antideslizante",
+        "Asas de transporte ergonómicas",
+        "Material duradero e higiénico"
+      ],
+      ar: [
+        "آلية عرض قابلة للتعديل",
+        "هيكل قاعدة غير قابلة للانزلاق",
+        "مقابض حمل مريحة",
+        "مادة متينة وصحية"
+      ]
+    },
+    table: `<div class="overflow-x-auto">
+  <table class="w-full text-sm text-left border border-gray-200">
+    <thead class="bg-gray-100 text-gray-700 font-bold uppercase">
+      <tr>
+        <th class="border p-3 text-center">Ürün Kodu</th>
+        <th class="border p-3 text-center">Ölçü (Çap)</th>
+        <th class="border p-3 text-center">Renk</th>
+        <th class="border p-3 text-center">Koli İçi</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr>
+        <td class="border p-3 text-center font-mono">HM-0101</td>
+        <td class="border p-3 text-center">185-325 mm</td>
+        <td class="border p-3 text-center">GRİ / BEYAZ</td>
+        <td class="border p-3 text-center">20 ADET</td>
+      </tr>
+    </tbody>
+  </table>
+</div>`,
+    image: "/images/dolap-ici-tabaklik.jpg"
   },
   {
-    id: "dolap içi-ayarli-bardaklik",
+    id: "dolap-ici-ayarli-bardaklik",
     category: "dolap içi",
     title: { tr: "Dolap İçi Ayarlı Bardaklık", en: "Adjustable Cup Holder", fr: "Porte-tasses réglable", es: "Soporte para tazas ajustable", ar: "حامل أكواب قابل للتعديل داخل الخزانة" },
     description: { tr: "Bardaklarınız için özel koruma ve düzen.", en: "Special protection and organization for your cups.", fr: "Protection spéciale pour vos tasses.", es: "Protección especial para sus tazas.", ar: "حماية خاصة وتنظيم لأكوابك." },
@@ -548,25 +600,129 @@ Sessiz ve yavaş kapanma (Soft-Close) özelliği ile konforlu bir kullanım suna
       es: "Organiza tus tazas y tazones con el soporte para tazas ajustable HEMAKS.",
       ar: "نظم أكوابك وفناجينك مع حامل الأكواب القابل للتعديل من هيماكس."
     },
-    image: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?q=80&w=600"
+    image: "/images/dolap-ici-bardaklik.jpg"
   },
 
   // --- TEZGAH ALTI GRUBU ---
   {
-    id: "sise-tasiyici",
+    id: "sise-deterjan-tasiyici",
     category: "tezgah-alti",
-    title: { tr: "Şişe Taşıyıcı", en: "Bottle Carrier", fr: "Porte-bouteilles", es: "Portabotellas", ar: "حامل زجاجات" },
-    description: { tr: "Tezgah altı düzenleyici sistem.", en: "Under-counter organizer system.", fr: "Système d'organisation.", es: "Sistema organizador.", ar: "نظام تنظيم تحت الطاولة." },
-    image: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?q=80&w=600"
+    title: { tr: "Tezgah Altı Şişelik & Deterjanlık", en: "Under-Counter Bottle & Detergent Rack", fr: "Porte-bouteilles et détergents sous plan", es: "Soporte para botellas y detergentes bajo encimera", ar: "رف الزجاجات والمنظفات تحت الطاولة" },
+    description: { tr: "Mutfak kimyasalları ve şişeler için düzenleyici.", en: "Organizer for kitchen chemicals and bottles.", fr: "Organisateur pour produits chimiques et bouteilles.", es: "Organizador para productos químicos y botellas.", ar: "منظم للمواد الكيميائية والمطابخ." },
+    image: "/images/tezgah-alti-şişelik.jpg",
+    images: ["/images/tezgah-alti-şişelik.jpg", "/images/tezgah-alti-şişelik-2.jpg"]
+  },
+  {
+    id: "rayli-cekmece",
+    category: "tezgah-alti",
+    title: { tr: "Raylı Çekmece Sistemleri", en: "Rail Drawer Systems", fr: "Systèmes de tiroirs à rails", es: "Sistemas de cajones con rieles", ar: "أنظمة أدراج السكك الحديدية" },
+    description: { tr: "Konforlu ve sessiz çekmece çözümleri.", en: "Comfortable and quiet drawer solutions.", fr: "Solutions de tiroirs confortables.", es: "Soluciones de cajones cómodas.", ar: "حلول أدراج مriحة وهادئة." },
+    image: "/images/rayli-cekmece.jpg"
+  },
+  {
+    id: "rayli-luks-cekmece",
+    category: "tezgah-alti",
+    title: { tr: "Raylı Lüks Çekmece Sistemleri", en: "Luxury Rail Drawer Systems", fr: "Systèmes de tiroirs de luxe à rails", es: "Sistemas de cajones de lujo con rieles", ar: "أنظمة أدراج السكك الحديدية الفاخرة" },
+    description: { tr: "Premium çekmece mekanizmaları.", en: "Premium drawer mechanisms.", fr: "Mécanismes de tiroirs premium.", es: "Mecanismos de cajones premium.", ar: "آليات أدراج متميزة." },
+    image: "/images/rayli-luks-cekmece.jpg"
+  },
+  {
+    id: "fasulye-kose",
+    category: "tezgah-alti",
+    title: { tr: "Ahşap Tabanlı Kör Köşe (Fasulye)", en: "Wooden Based Blind Corner (Kidney)", fr: "Coin aveugle à base de bois (Haricot)", es: "Rincón ciego con base de madera (Frijol)", ar: "الزاوية العمياء الخشبية (الفاصوليا)" },
+    description: { tr: "Köşe dolaplarında maksimum verimlilik.", en: "Maximum efficiency in corner cabinets.", fr: "Efficacité maximale dans les armoires d'angle.", es: "Máxima eficiencia en armarios de rincón.", ar: "أقصى قدر من الكفاءة في خزائن الزاوية." },
+    image: "/images/fasulye.jpg",
+    images: ["/images/fasulye.jpg", "/images/fasulye-2.jpg", "/images/fasulye-3.jpg"]
+  },
+  {
+    id: "doner-sepet-1-2",
+    category: "tezgah-alti",
+    title: { tr: "1/2 Borulu Döner Sepet Takımı", en: "1/2 Rotating Carousel Set", fr: "Ensemble de paniers rotatifs 1/2", es: "Juego de cestos giratorios 1/2", ar: "طقم سلة دوارة 1/2" },
+    description: { tr: "Yarım döner köşe sepet sistemi.", en: "Half rotating corner basket system.", fr: "Système de panier rotatif demi-tour.", es: "Sistema de cesto giratorio de media vuelta.", ar: "نظام سلة زاوية دوارة نصف قطرية." },
+    image: "/images/1-2-borulu-doner-sepet.jpg",
+    images: ["/images/1-2-borulu-doner-sepet.jpg", "/images/1-2-borulu-doner-sepet-2.jpg"]
+  },
+  {
+    id: "doner-sepet-3-4",
+    category: "tezgah-alti",
+    title: { tr: "3/4 Borulu Döner Sepet Takımı", en: "3/4 Rotating Carousel Set", fr: "Ensemble de paniers rotatifs 3/4", es: "Juego de cestos giratorios 3/4", ar: "طقم سلة دوارة 3/4" },
+    description: { tr: "Üç çeyrek döner sepet sistemi.", en: "Three-quarter rotating basket system.", fr: "Système de panier rotatif aux trois quarts.", es: "Sistema de cesto giratorio de tres cuartos.", ar: "نظام سلة دوارة بثلاثة أرباع." },
+    image: "/images/3-4-borulu-doner-sepet.jpg",
+    images: ["/images/3-4-borulu-doner-sepet.jpg", "/images/3-4-borulu-doner-sepet-2.jpg"]
+  },
+  {
+    id: "doner-sepet-4-4",
+    category: "tezgah-alti",
+    title: { tr: "4/4 Borulu Döner Sepet Takımı", en: "Full Circle Rotating Carousel Set", fr: "Ensemble de paniers rotatifs complet", es: "Juego de cestos giratorios completos", ar: "طقم سلة دوارة كاملة" },
+    description: { tr: "Tam tur döner sepet takımı.", en: "Full circle rotating basket set.", fr: "Ensemble de paniers rotatifs complet.", es: "Juego de cestos giratorios completo.", ar: "طقم سلة دوارة كاملة الدوران." },
+    image: "/images/4-4-borulu-doner-sepet.jpg",
+    images: ["/images/4-4-borulu-doner-sepet.jpg", "/images/4-4-borulu-doner-sepet-2.jpg"]
+  },
+  {
+    id: "rayli-cop-kovasi",
+    category: "tezgah-alti",
+    title: { tr: "Raylı Çöp Kovası", en: "Rail Trash Can", fr: "Poubelle à rails", es: "Cubo de basura con rieles", ar: "سلة المهملات مع السكك الحديدية" },
+    description: { tr: "Dolap içi gizli çöp kovası sistemleri.", en: "In-cabinet hidden trash can systems.", fr: "Systèmes de poubelles cachées.", es: "Sistemas de cubos de basura ocultos.", ar: "أنظمة سلال المهملات المخفية داخل الخزانة." },
+    image: "/images/rayli-cop-kovasi.jpg",
+    images: ["/images/rayli-cop-kovasi.jpg", "/images/rayli-cop-kovasi-2.jpg", "/images/rayli-cop-kovasi-3.jpg"]
+  },
+  {
+    id: "kapaga-monte-cop-kovasi",
+    category: "tezgah-alti",
+    title: { tr: "Kapağa Monte Oval Çöp Kovası", en: "Door Mounted Oval Trash Can", fr: "Poubelle ovale montée sur porte", es: "Cubo de basura ovalado montado en puerta", ar: "سلة مهملات بيضاوية مثبتة على الباب" },
+    description: { tr: "Pratik ve hijyenik çöp çözümleri.", en: "Practical and hygienic trash solutions.", fr: "Solutions de déchets pratiques.", es: "Soluciones de basura prácikas.", ar: "حلول مهملات عملية وصحية." },
+    image: "/images/kapaga-monte-rayli-cop-kovasi.jpg"
+  },
+  {
+    id: "kapak-arkasi-raf",
+    category: "tezgah-alti",
+    title: { tr: "Kapak Arkası Raf", en: "Inside Door Shelf", fr: "Étagère derrière la porte", es: "Estante derrière la puerta", ar: "رف خلف الباب" },
+    description: { tr: "Küçük eşyalar için ekstra saklama alanı.", en: "Extra storage space for small items.", fr: "Espace de stockage supplémentaire için küçük eşyalar.", es: "Espacio de almacenamiento extra para artículos pequeños.", ar: "مساحة تخزين إضافية للأشياء الصغيرة." },
+    image: "/images/kapak-arasi-raf.jpg"
+  },
+  {
+    id: "rayli-tupcek",
+    category: "tezgah-alti",
+    title: { tr: "Raylı Tüpçek", en: "Rail Gas Cylinder System", fr: "Système de bouteille de gaz à rails", es: "Sistema de cilindro de gas con rieles", ar: "نظام أسطوانة الغاز مع قضبان" },
+    description: { tr: "Tüpler için güvenli ve kolay erişimli sistem.", en: "Safe and easy access system for gas cylinders.", fr: "Système d'accès sûr pour les bouteilles de gaz.", es: "Sistema de acceso seguro para cilindros de gas.", ar: "نظام وصول آمن وسهل لأسطوانات الغاز." },
+    image: "/images/rayli-tupcek.jpg"
   },
 
   // --- GARDIROP GRUBU ---
   {
-    id: "asansor-aski",
+    id: "gardirop-asansoru",
     category: "gardirop",
-    title: { tr: "Asansör Askı", en: "Lift Hanger", fr: "Penderie relevable", es: "Percha elevadora", ar: "شماعة مصعد" },
-    description: { tr: "Yüksek dolaplara kolay erişim.", en: "Easy access to high cabinets.", fr: "Accès facile aux armoires hautes.", es: "Fácil acceso a armarios altos.", ar: "سهولة الوصول إلى الخزانات العالية." },
-    image: "https://images.unsplash.com/photo-1558997519-83ea9252edf8?q=80&w=600"
+    title: { tr: "Gardırop Asansörü", en: "Wardrobe Lift", fr: "Élévateur de garde-robe", es: "Elevador de armario", ar: "مصعد خزانة الملابس " },
+    description: { tr: "Yüksek dolaplar için ergonomik askı çözümü.", en: "Ergonomic hanger solution for high cabinets.", fr: "Solution de penderie ergonomique.", es: "Solución de percha ergonómica.", ar: "حل شماعات مريح للخزانات العالية." },
+    image: "/images/asansor.jpg"
+  },
+  {
+    id: "teleskopik-rayli-aluminyum-pantolonluk",
+    category: "gardirop",
+    title: { tr: "Teleskopik Raylı Alüminyum Pantolonluk", en: "Telescopic Rail Aluminum Trouser Rack", fr: "Porte-pantalons en aluminium à rails télescopiques", es: "Pantalonero de aluminio con rieles telescópicos", ar: "رف بنطلون ألومنيum مع قضيب تلسكوبي" },
+    description: { tr: "Şık ve dayanıklı pantolon askı sistemi.", en: "Stylish and durable trouser hanger system.", fr: "Système de penderie élégant.", es: "Sistema de percha elegante.", ar: "نظام شماعات بنطلون أنيق ومتين." },
+    image: "/images/pantolonluk-aluminyum.jpg"
+  },
+  {
+    id: "ustten-rayli-pantolonluk",
+    category: "gardirop",
+    title: { tr: "Üstten Raylı Pantolonluk", en: "Top Mounted Trouser Rack", fr: "Porte-pantalons monté par le haut", es: "Pantalonero montado por arriba", ar: "رف بنطلون مثبت من الأعلى" },
+    description: { tr: "Dar alanlar için pratik pantolon askısı.", en: "Practical trouser hanger for narrow spaces.", fr: "Penderie pratique pour espaces étroits.", es: "Percha prácika para espacios estrechos.", ar: "شماعة بنطلون عملية للمساحات الضيقة." },
+    image: "/images/pantolonluk-ustten.jpg"
+  },
+  {
+    id: "teleskopik-rayli-pantolonluk-ayarli",
+    category: "gardirop",
+    title: { tr: "Teleskopik Raylı Pantolonluk (Ayarlı)", en: "Adjustable Telescopic Rail Trouser Rack", fr: "Porte-pantalons réglable à rails télescopiques", es: "Pantalonero ajustable con rieles telescópicos", ar: "رف بنطلون قابل للتعديل مع قضيب تلسكوبي" },
+    description: { tr: "Genişliği ayarlanabilir pantolon düzenleyici.", en: "Width adjustable trouser organizer.", fr: "Organisateur de pantalons réglable.", es: "Organizador de pantalones ajustable.", ar: "منظم بنطلون قابل للتعديل العرض." },
+    image: "/images/pantolonluk-ayarli.jpg"
+  },
+  {
+    id: "yandan-rayli-kravatlik-kemerlik",
+    category: "gardirop",
+    title: { tr: "Yandan Raylı Kravatlık - Kemerlik", en: "Side Mounted Tie & Belt Rack", fr: "Porte-cravates et ceintures latéral", es: "Corbatero y cinturonero lateral", ar: "رف ربطات العنق والأحزمة الجانبي" },
+    description: { tr: "Kravat ve kemerler için yan panel düzenleyici.", en: "Side panel organizer for ties and belts.", fr: "Organisateur de cravates et ceintures.", es: "Organizador de corbatas y cinturones.", ar: "منظم لوحة جانبية لربطات العنق والأحزمة." },
+    image: "/images/kravatlik.jpg"
   },
 
   // --- BANYO GRUBU ---
